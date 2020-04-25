@@ -1,0 +1,39 @@
+/*----------------------------- Loader 2 -----------------------------*/
+.loader2{
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.loader2Inside{
+  height: 120px; /* Increase/decrese the size of the spinner */
+  width: 120px;
+  border-style: solid;
+  border-top-color: blue;
+  border-width: 10px; /* Increase/decrese the width of the spinner */
+  border-radius: 50%;
+  animation-name: loaderTwo;
+  animation-duration: 1s; /* Increase/decrese the speed of the spinner */
+  animation-iteration-count: infinite;
+}
+.loader2Content{
+  position: absolute;
+  margin-top: 90px;
+  color: white;
+}
+@keyframes loaderTwo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------- Loader 2 Ends --------------------------*/

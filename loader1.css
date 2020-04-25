@@ -1,0 +1,50 @@
+body{
+  margin: 40px;
+  padding: 0;
+}
+
+/*------------------------ Loader 1 ------------------------*/
+.loader1{
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.loader1Inside{
+  height: 50px;
+  width:50px;
+  border-radius: 50%;
+  animation-name: loaderOne;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.loader1Content{
+  position: absolute;
+  margin-top: 50px;
+  color: white;
+}
+@keyframes loaderOne {
+  0%   {background-color:red; }
+  25%  {background-color:yellow;}
+  50%  {background-color:blue; }
+  75%  {background-color:green; }
+  100% {background-color:red; }
+}
+
+
+/*------------------- Loader 1 Ends  ------------------------------*/
+
+
+
+
+
+
+
+
+

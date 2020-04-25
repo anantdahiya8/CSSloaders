@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>CSS Loaders</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link type="text/css" rel="stylesheet" href="loader1.css" />
+<link type="text/css" rel="stylesheet" href="loader2.css" />
+<link type="text/css" rel="stylesheet" href="loader3.css" />
+<link type="text/css" rel="stylesheet" href="loader4.css" />
+<link type="text/css" rel="stylesheet" href="loader5.css" />
+<script type="text/javascript">
+	function showLoader(number){
+		var loader = document.querySelector('.loader'+number);
+		loader.style.display = 'flex';
+		setTimeout(function(){ loader.style.display = 'none'; }, 4000);
+	}
+
+</script>
+</head>
+<body>
+
+<div class="loader1"><div class="loader1Inside"></div><div class="loader1Content">Loading Please wait ...</div></div>
+<div class="loader2"><div class="loader2Inside"></div><div class="loader2Content">Loading Please wait ...</div></div>
+<div class="loader3"><div class="loader3Inside1"></div><div class="loader3Inside2"></div><div class="loader3Inside3"></div></div>
+<div class="loader4"><div class="loader4Inside"></div></div>
+<div class="loader5"><div class="loader5Inside"></div></div>
+
+
+	<div class="container jumbotron" style="border-radius: 5px;">
+		<h1 style="text-align: center;">CSS Full Screen Loaders</h1>
+		<div style="text-align: center;" class="loaderButtond">
+		<button class="btn btn-primary" onclick="showLoader('1')">Loader 1</button>
+		<button class="btn btn-primary" onclick="showLoader('2')">Loader 2</button>
+		<button class="btn btn-primary" onclick="showLoader('3')">Loader 3</button>
+		<button class="btn btn-primary" onclick="showLoader('4')">Loader 4</button>
+		<button class="btn btn-primary" onclick="showLoader('5')">Loader 5</button>
+		</div>
+	</div>
+
+
+</body>
+</html>

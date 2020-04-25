@@ -1,0 +1,32 @@
+/*----------------------------- Loader 4 -----------------------------*/
+.loader4{
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.loader4Inside{
+  height: 70px; /* Increase/decrese the size of the spinner */
+  width: 70px;
+  border-style: dashed;
+  border-color: white;
+  border-radius: 100%;
+  border-width: 10px; /* Increase/decrese the width of the spinner */
+  animation-name: loaderFour;
+  animation-duration: 0.5s; /* Increase/decrese the speed of the spinner */
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+
+}
+@keyframes loaderFour {
+  0%   {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+/*--------------------------------- Loader 4 Ends --------------------------*/

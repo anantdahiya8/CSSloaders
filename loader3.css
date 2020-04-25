@@ -1,0 +1,77 @@
+/*----------------------------- Loader 3 -----------------------------*/
+.loader3{
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.loader3Inside1{
+  height: 20px; /* Increase/decrese the size of the spinner */
+  width: 20px;
+  margin: 5px;
+  background-color: red;
+  border-radius: 50%;
+  border-width: 10px; /* Increase/decrese the width of the spinner */
+  animation-name: loaderThreeOne;
+  animation-duration: 0.7s; /* Increase/decrese the speed of the spinner */
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+.loader3Inside2{
+  height: 20px; /* Increase/decrese the size of the spinner */
+  width: 20px;
+  margin: 5px;
+  background-color: blue;
+  border-radius: 50%;
+  border-width: 10px; /* Increase/decrese the width of the spinner */
+  animation-name: loaderThreeTwo;
+  animation-duration: 0.7s; /* Increase/decrese the speed of the spinner */
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+.loader3Inside3{
+  height: 20px; /* Increase/decrese the size of the spinner */
+  width: 20px;
+  margin: 5px;
+  background-color: green;
+  border-radius: 50%;
+  border-width: 10px; /* Increase/decrese the width of the spinner */
+  animation-name: loaderThreeThree;
+  animation-duration: 0.7s; /* Increase/decrese the speed of the spinner */
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+@keyframes loaderThreeOne {
+  0%   {margin-top: 0px;transform: rotate(0deg);}
+  25%  {margin-top: 30px;}
+  50%  {margin-top: 0px;border-radius: 0%;}
+  75%  {margin-top:-30px;}
+  100% {margin-top: 0px;transform: rotate(360deg);}
+
+}
+@keyframes loaderThreeTwo {
+  0%   {margin-top: 0px; transform: rotate(0deg);}
+  25%  {margin-top:-30px;}
+  50%  {margin-top: 0px;border-radius: 0%;}
+  75%  {margin-top: 30px;}
+  100% {margin-top: 0px; transform: rotate(360deg);}
+}
+@keyframes loaderThreeThree {
+  0%   {margin-top: 0px;transform: rotate(0deg);}
+  25%  {margin-top: 30px;}
+  50%  {margin-top: 0px;border-radius: 0%;}
+  75%  {margin-top:-30px;}
+  100% {margin-top: 0px;transform: rotate(360deg);}
+
+}
+
+/*--------------------------------- Loader 3 Ends --------------------------*/
