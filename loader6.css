@@ -1,0 +1,59 @@
+/*----------------------------- Loader 6 (Cube) -----------------------------*/
+.loader6{
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  perspective: 500px;
+}
+.loader6Inside{
+  width: 80px;
+  height: 80px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation-name: loaderSixRotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.loader6Inside .cube-face{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.loader6Inside .cube-front{
+  transform: translateZ(40px);
+}
+.loader6Inside .cube-back{
+  transform: translateZ(-40px) rotateY(180deg);
+}
+.loader6Inside .cube-right{
+  transform: translateX(40px) rotateY(90deg);
+}
+.loader6Inside .cube-left{
+  transform: translateX(-40px) rotateY(-90deg);
+}
+.loader6Inside .cube-top{
+  transform: translateY(-40px) rotateX(90deg);
+}
+.loader6Inside .cube-bottom{
+  transform: translateY(40px) rotateX(-90deg);
+}
+@keyframes loaderSixRotate {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+/*--------------------------------- Loader 6 Ends --------------------------*/
